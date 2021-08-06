@@ -1,11 +1,9 @@
 const express = require('express');
 const app = express();
 
-app.use('/', (req, res, next) => {
-    res.status(200).json({
-        message: "It Works"
-    });
-});
+const employeeRoutes = require('./api/routes/employees');
+
+app.use('/employee', employeeRoutes);
 
 module.exports = app;
 
