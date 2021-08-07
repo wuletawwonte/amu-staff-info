@@ -4,7 +4,7 @@
   "description": "A MERN Application That Displays Details of AMU Employees Including Phone Numbers",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Wuletaw Wonte",
@@ -12,7 +12,9 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mysql": "^2.18.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.12"
   }
 }
