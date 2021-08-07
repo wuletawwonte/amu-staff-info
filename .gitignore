@@ -1,11 +1,11 @@
 
 # dependencies
-./node_modules
+/node_modules
 
 # testing
-./coverage
+/coverage
 
 # build
-./build
+/build
 
 .env
