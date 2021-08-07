@@ -10,6 +10,7 @@
   "author": "Wuletaw Wonte",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.12"
