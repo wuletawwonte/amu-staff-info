@@ -9,3 +9,18 @@ exports.employees_get_all = (req, res, next) => {
     });
   });
 };
+
+exports.employees_search = (req, res, next) => {
+  const searchKey = req.params.searchKey;
+  connection.query(
+    "SELECT * FROM employees WHERE firstname LIKE '%" +
+      searchKey +
+      "%' OR lastname LIKE '%" +
+      searchKey +
+      "%'",
+    (err, rows, fields) => {
+      console.log(rows);
+      res.status(200).json({ staffs: rows });
+    }
+  );
+};
